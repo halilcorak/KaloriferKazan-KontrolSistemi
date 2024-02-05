@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Kazan Kontrol Sistemi</string>
+    <string name="button">Button</string>
+    <string name="heater_key">Anahtar</string>
+    <string name="fan_stop_tmp_prompt">Fanın Duracağı Sıcaklık</string>
+    <string name="fan_tolerance_tmp_prompt">Fan Sıcaklık Toleransı</string>
+    <string name="pompa_tmp_prompt">Devirdaim Sıcaklığı</string>
+</resources>

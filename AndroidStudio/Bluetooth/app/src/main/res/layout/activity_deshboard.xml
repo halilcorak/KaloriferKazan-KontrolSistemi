@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    tools:context=".Deshboard">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/black1"
+            android:orientation="horizontal">
+
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/heater_image"
+                android:layout_width="118dp"
+                android:layout_height="107dp"
+                android:src="@drawable/heater1" />
+
+            <TextView
+                android:id="@+id/heater_tmp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="0 °C"
+                android:textColor="@android:color/holo_red_light"
+                android:textSize="60sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="15dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/fan_run_image"
+                android:layout_width="118dp"
+                android:layout_height="109dp"
+                android:src="@drawable/bluefan">
+
+            </pl.droidsonroids.gif.GifImageView>
+
+            <Button
+                android:id="@+id/btn_fan_start"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Fan \nÇalıştır" />
+            <Space
+                android:layout_width="15dp"
+                android:layout_height="15dp" />
+            <Button
+                android:id="@+id/btn_fan_stop"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Fan \nDurdur" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/colorPressedHighlight"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Fan Hızı"
+                android:textSize="24sp" />
+
+            <SeekBar
+                android:id="@+id/fan_speed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="255"
+                android:min="0"/>
+
+            <TextView
+                android:id="@+id/fan_speed_value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="0"
+                android:textSize="24sp" />
+        </LinearLayout>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="15dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/teal_200"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fanın Duracağı Sıcaklık"
+                android:textSize="24sp" />
+
+            <Spinner
+                android:id="@+id/fan_stop_tmp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:prompt="@string/fan_stop_tmp_prompt"
+                android:spinnerMode="dialog" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="15dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/purple_200"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fan Sıcaklık Toleransı"
+                android:textSize="24sp" />
+
+            <Spinner
+                android:id="@+id/fan_tolerance_tmp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:prompt="@string/fan_tolerance_tmp_prompt"
+                android:spinnerMode="dialog" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="15dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_blue_bright"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/pompa_tmp_lbl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Devirdaim Sıcaklığı"
+                android:textSize="24sp" />
+
+            <Spinner
+                android:id="@+id/pompa_tmp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:prompt="@string/pompa_tmp_prompt"
+                android:spinnerMode="dialog" />
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="15dp" />
+
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
