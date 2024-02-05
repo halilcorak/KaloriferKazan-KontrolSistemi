@@ -1,0 +1,4 @@
+com/example/bluetooth/ExampleInstrumentedTest.java
+ com.example.bluetooth.ExampleInstrumentedTest
+com/example/bluetooth/test/BuildConfig.java
+ com.example.bluetooth.test.BuildConfig

@@ -1,0 +1,4 @@
+#Sat Dec 05 12:11:04 EET 2020
+base.0=D\:\\Projects\\Android Studio\\Bluetooth\\app\\build\\intermediates\\dex\\debugAndroidTest\\mergeDexDebugAndroidTest\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
