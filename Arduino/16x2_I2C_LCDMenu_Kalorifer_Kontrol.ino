@@ -5,8 +5,8 @@ SoftwareSerial BTSerial(10, 11); // RX, TX  // BT için ayrıca bir Seri Haberle
 
 const bool debug = true;
 
-#define fanPin 9
-#define pompaPin 8
+#define fanPin 9 //led bağla
+#define pompaPin 8 //led bağla
 
 //Butonların giriş pinleri
 #define sag 2
